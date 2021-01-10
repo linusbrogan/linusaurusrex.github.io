@@ -6,7 +6,7 @@ To reproduce this behavior in WSL, my first thought was just to `alias` every `.
 I did a little digging into the behavior when a command is not found, and I discovered a convenient solution.
 Bash runs the function `command_not_found_handle` when a command is not found, so I set a custom `command_not_found_handle` in my `.bashrc` to retry the command with the `.exe` extension added.
 
-```bash
+```
 CNF_PATH=/usr/lib/command-not-found
 command_not_found_handle() {
 	# Check for .exe extension
