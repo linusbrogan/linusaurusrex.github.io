@@ -1,0 +1,96 @@
+body {
+	background: #333333;
+	margin: 0px;
+}
+
+.wrapper {
+	display: flex;
+	flex: row;
+	justify-content: center;
+}
+
+header {
+	display: flex;
+	flex: column;
+	justify-content: center;
+	width: 100%;
+	flex-grow: 1;
+	color: #ffffff;
+	border-bottom: 1px solid #555555;
+}
+
+header h1 {
+	margin: 20px;
+	width: 100%;
+	max-width: 800px;
+	justify-content: left;
+}
+
+header h1 span {
+	padding-left: 20px;
+}
+
+.card-container {
+	max-width: 800px;
+	display: flex;
+	flex: column;
+	justify-content: center;
+	flex-grow: 1;
+	flex-wrap: wrap;
+	margin: 0px;
+}
+
+.card {
+	display: block;
+	width: 100%;
+	border: 1px solid black;
+	border-radius: 8px;
+	padding: 10px 20px 10px 20px;
+	margin: 10px;
+	display: flex;
+	flex: row;
+	flex-grow: 1;
+	justify-content: center;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.card-linkedin {
+	background: #0a66c2;
+	border: 2px solid #0a66c2;
+	color: #ffffff;
+}
+
+.card-linkedin:hover {
+	background: #378fe9;
+}
+
+.card-github {
+	background: #24292f;
+	border: 2px solid #24292f;
+	color: #ffffff
+}
+
+.card-github:hover {
+	background: #44494f;
+	color: #ffffff
+}
+
+.card-generic {
+	background: #dddddd;
+	border: 2px solid #dddddd;
+	color: #000000;
+}
+.card-generic:hover {
+	background: #eeeeee;
+}
+
+.card-text {
+	background: #white;
+	color: white;
+	border: 2px solid #dddddd;
+	font-weight: normal;
+	padding: 30px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
